@@ -20,7 +20,6 @@ pub struct BankDetails {
     pub customer_id: String,
     #[serde(default = "BsonDateTime::now", rename = "created_at")]
     pub created_at: BsonDateTime,
-
     #[serde(default = "BsonDateTime::now", rename = "updated_at")]
     pub updated_at: BsonDateTime,
 }
